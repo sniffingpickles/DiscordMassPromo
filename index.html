@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Promote Bot for Discord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img alt="Discord Logo" src="./assets/images/logo.svg" />
+      </div>
+      <div class="form-container">
+        <div class="form-element">
+          <div class="form-label">Token</div>
+          <div class="form-input">
+            <input
+              type="password"
+              id="token"
+              placeholder="Your Discord token"
+            />
+          </div>
+        </div>
+        <div class="form-element">
+          <div class="form-label">Channels</div>
+          <div class="form-input">
+            <textarea
+              id="channels"
+              placeholder="Channel IDs seperated by comma (e.g., 11111,22222,33333)"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-element">
+          <div class="form-label">Message</div>
+          <div class="form-input">
+            <textarea id="message" placeholder="Your message"></textarea>
+          </div>
+        </div>
+        <div class="form-element">
+          <div class="form-input pull-right">
+            <input
+              type="submit"
+              id="submit"
+              class="primary"
+              value="Send Messages"
+              onclick="submitForm()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/discord.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
